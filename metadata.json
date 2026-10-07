@@ -1,0 +1,9 @@
+{
+  "name": "ThermoAI Studio-3",
+  "description": "Integrated scientific platform for thermodynamic data mining, CALPHAD modeling with ESPEI, and Bayesian uncertainty quantification.",
+  "version": "V11.3-ACADEMIC-STABLE",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

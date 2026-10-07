@@ -1,0 +1,168 @@
+$ Version 5.0 of Unary database - 2 June 2009
+
+$TITLE=SGTE Unary Database version v5.0 - 2 June 2009
+
+$ General changes since version 3.0:
+
+$ Revised data for Ag CUB_A13
+$ New data for        BCT_A5, HCP_ZN
+$ New data for     Al HCP_ZN
+$ New data for     As RED_P
+$ New data for     Au DHCP
+$ Revised data for B  GRAPHITE
+$ Data removed for    BCC_A2, FCC_A1, HCP_A3
+$ New data for        ALPHA_RHOMBO_B
+$ New data for     Bi BIIN_EPSILON, DIAMOND_A4
+$ Revised data for Ca FCC_A1, BCC_A2, HCP_A3
+$ New data for     Cd RHOMBO_A10, BCT_A5, BCC_A2
+$ New data for     Ce HCP_A3, DHCP
+$ Revised data for Co FCC_A1
+$ New data for     Cr HCP_ZN
+$ New data for     Cu HCP_ZN
+$ Revised data for    HCP_A3
+$ New data for     Er BCC_A2
+$ Revised data for Eu BCC_A2
+$ New data for     Fe ORTHORHOMBIC_A20, TETRAGONAL_U
+$ Revised data        FCC_A1, HCP_A3
+$ New data for     Ga HCP_ZN, DIAMOND_A4
+$ New data for     Gd FCC_A1
+$ Revised data for    BCC_A2
+$ New data for     Ge RHOMBOHEDRAL_A7, BCT_A5
+$ Revised data for Hf HCP_A3, BCC_A2, FCC_A1
+$ New data for     Hg TETRAGONAL_A6, HCP_A3, RHOMBO_A10
+$ Revised data for Ho BCC_A2, LIQUID, HCP_A3
+$ New data for     In BCT_A5, RHOMBOHEDRAL_A7, BIIN_EPSILON, HCP_ZN, DHCP
+$ Revised data for    FCC_A1, TET_ALPHA1
+$ New data for     Mg HCP_ZN
+$ Revised data for Mn CBCC_A12, CUB_A13, FCC_A1, BCC_A2, LIQUID, HCP_A3
+$ Remove              LAVES_C14
+$ Revised data for Ni FCC_A1, LIQUID, BCC_A2, HCP_A3, CBCC_A12, CUB_A13
+$ New data for        BCT_A5
+$ New data for     Nd HCP_A3
+$ Revised data for Os BCC_A2
+$ New data for     P  RHOMBOHEDRAL_A7
+$ Revised data for Pb RHOMBOHEDRAL_A7, TETRAGONAL_A6, TET_ALPHA1, RHOMBO_A10, FCC_A1
+$ New data for     Pd RHOMBOHEDRAL_A7
+$ Revised data for Re BCC_A2
+$ Revised data for Ru BCC_A2
+$ Revised data for S  ORTHORHOMBIC_S, MONOCLINIC, LIQUID
+$ New data for     Sc DHCP, FCC_A1
+$ New data for     Si HCP_ZN
+$ New data for     Sm HCP_A3
+$ Phase name change   RHOMB to RHOMB_C19
+$ New data for     Sn TETRAGONAL_A6, HCP_ZN, CBCC_A12, CUB_A13, DHCP
+$                     Melting point precision changed to 505.078
+$                     Minor changes to coefficients to ensure very smooth 
+$                     changes in functions across range changes
+$ Revised data for    HCP_A3
+$ Revised data for Th FCC_A1, BCC_A2, LIQUID
+$ New data for     U  FCC_A1, HCP_A3
+$ New data for     Y  FCC_A1
+$ New data for     Yb FCC_A1
+$ New data for     Zn RHOMBOHEDRAL_A7, HCP_ZN, CBCC_A12, CUB_A13
+$ Revised data for    HCP_A3, TETRAGONAL_A6
+$ New data for     Zr CUB_A13, CBCC_A12, ORTHORHOMBIC_A20, TETRAGONAL_U
+
+$ Restructuring of database to include ELEMENT, CONSTITUENTS and FUNCTIONS statements
+
+ ELEMENT /-   ELECTRON_GAS              0.0000E+00  0.0000E+00  0.0000E+00 !
+ ELEMENT VA   VACUUM                    0.0000E+00  0.0000E+00  0.0000E+00 !
+ ELEMENT AG   FCC_A1                    1.0787E+02  5.7446E+03  4.2551E+01 !
+ ELEMENT AL   FCC_A1                    2.6982E+01  4.5773E+03  2.8322E+01 !
+ ELEMENT AM   DHCP                      2.4306E+02  0.0000E+00  0.0000E+00 !
+ ELEMENT AS   RHOMBOHEDRAL_A7           7.4922E+01  0.0000E+00  0.0000E+00 !
+ ELEMENT AU   FCC_A1                    1.9697E+02  6.0166E+03  4.7488E+01 !
+ ELEMENT B    BETA_RHOMBO_B             1.0811E+01  1.2220E+03  5.9000E+00 !
+ ELEMENT BA   BCC_A2                    1.3733E+02  0.0000E+00  0.0000E+00 !
+ ELEMENT BE   HCP_A3                    9.0122E+00  0.0000E+00  0.0000E+00 !
+ ELEMENT BI   RHOMBOHEDRAL_A7           2.0898E+02  6.4266E+03  5.6735E+01 !
+ ELEMENT C    GRAPHITE                  1.2011E+01  1.0540E+03  5.7400E+00 !
+ ELEMENT CA   FCC_A1                    4.0078E+01  6.1965E+03  4.1589E+01 !
+ ELEMENT CD   HCP_A3                    1.1241E+02  6.2509E+03  5.1798E+01 !
+ ELEMENT CE   FCC_A1                    1.4011E+02  0.0000E+00  0.0000E+00 !
+ ELEMENT CO   HCP_A3                    5.8933E+01  0.0000E+00  0.0000E+00 !
+ ELEMENT CR   BCC_A2                    5.1996E+01  4.0500E+03  2.3560E+01 !
+ ELEMENT CS   BCC_A2                    1.3291E+02  7.7153E+03  8.5149E+01 !
+ ELEMENT CU   FCC_A1                    6.3546E+01  5.0041E+03  3.3150E+01 !
+ ELEMENT DY   HCP_A3                    1.6250E+02  0.0000E+00  0.0000E+00 !
+ ELEMENT ER   HCP_A3                    1.6726E+02  7.3923E+03  7.3178E+01 !
+ ELEMENT EU   BCC_A2                    1.5197E+02  0.0000E+00  8.0793E+01 !
+ ELEMENT FE   BCC_A2                    5.5847E+01  4.4890E+03  2.7280E+01 !
+ ELEMENT GA   ORTHORHOMBIC_GA           6.9723E+01  5.5731E+03  4.0828E+01 !
+ ELEMENT GD   HCP_A3                    1.5725E+02  0.0000E+00  0.0000E+00 !
+ ELEMENT GE   DIAMOND_A4                7.2610E+01  4.6275E+03  3.1087E+01 !
+ ELEMENT HF   HCP_A3                    1.7849E+02  0.0000E+00  0.0000E+00 !
+ ELEMENT HG   LIQUID                    2.0059E+02  0.0000E+00  0.0000E+00 !
+ ELEMENT HO   HCP_A3                    1.6493E+02  0.0000E+00  0.0000E+00 !
+ ELEMENT IN   TETRAGONAL_A6             1.1482E+02  6.6100E+03  5.7650E+01 !
+ ELEMENT IR   FCC_A1                    1.9222E+02  5.2677E+03  3.5505E+01 !
+ ELEMENT K    BCC_A2                    3.9098E+01  7.0835E+03  6.4672E+01 !
+ ELEMENT LA   DHCP                      1.3891E+02  0.0000E+00  0.0000E+00 !
+ ELEMENT LI   BCC_A2                    6.9410E+00  4.6233E+03  2.9095E+01 !
+ ELEMENT LU   HCP_A3                    1.7497E+02  0.0000E+00  0.0000E+00 !
+ ELEMENT MG   HCP_A3                    2.4305E+01  4.9980E+03  3.2671E+01 !
+ ELEMENT MN   CBCC_A12                  5.4938E+01  4.9960E+03  3.2008E+01 !
+ ELEMENT MO   BCC_A2                    9.5940E+01  4.5890E+03  2.8560E+01 !
+ ELEMENT N    1/2_MOLE_N2(G)            1.4007E+01  4.3350E+03  9.5751E+01 !
+ ELEMENT NA   BCC_A2                    2.2990E+01  6.4475E+03  5.1447E+01 !
+ ELEMENT NB   BCC_A2                    9.2906E+01  5.2200E+03  3.6270E+01 !
+ ELEMENT ND   DHCP                      1.4424E+02  0.0000E+00  0.0000E+00 !
+ ELEMENT NI   FCC_A1                    5.8690E+01  4.7870E+03  2.9796E+01 !
+ ELEMENT NP   ORTHORHOMBIC_AC           2.3705E+02  0.0000E+00  0.0000E+00 !
+ ELEMENT O    1/2_MOLE_O2(G)            1.5999E+01  4.3410E+03  1.0252E+02 !
+ ELEMENT OS   HCP_A3                    1.9020E+02  0.0000E+00  3.2635E+01 !
+ ELEMENT P    WHITE_P                   3.0974E+01  0.0000E+00  0.0000E+00 !
+ ELEMENT PA   BCT_AA                    2.3104E+02  0.0000E+00  0.0000E+00 !
+ ELEMENT PB   FCC_A1                    2.0720E+02  6.8785E+03  6.4785E+01 !
+ ELEMENT PD   FCC_A1                    1.0642E+02  5.4685E+03  3.7823E+01 !
+ ELEMENT PR   DHCP                      1.4091E+02  0.0000E+00  0.0000E+00 !
+ ELEMENT PT   FCC_A1                    1.9508E+02  5.7237E+03  4.1631E+01 !
+ ELEMENT PU   ALPHA_PU                  2.4406E+02  0.0000E+00  0.0000E+00 !
+ ELEMENT RB   BCC_A2                    8.5468E+01  7.4894E+03  7.6776E+01 !
+ ELEMENT RE   HCP_A3                    1.8621E+02  5.3555E+03  3.6526E+01 !
+ ELEMENT RH   FCC_A1                    1.0291E+02  4.9204E+03  3.1505E+01 !
+ ELEMENT RU   HCP_A3                    1.0107E+02  4.6024E+03  2.8535E+01 !
+ ELEMENT S    ORTHORHOMBIC_S            3.2066E+01  0.0000E+00  0.0000E+00 !
+ ELEMENT SB   RHOMBOHEDRAL_A7           1.2175E+02  5.8702E+03  4.5522E+01 !
+ ELEMENT SC   HCP_A3                    4.4956E+01  0.0000E+00  0.0000E+00 !
+ ELEMENT SE   HEXAGONAL_A8              7.8960E+01  5.5145E+03  4.1966E+01 !
+ ELEMENT SI   DIAMOND_A4                2.8085E+01  3.2175E+03  1.8820E+01 !
+ ELEMENT SM   RHOMBOHEDRAL_SM           1.5036E+02  0.0000E+00  0.0000E+00 !
+ ELEMENT SN   BCT_A5                    1.1871E+02  6.3220E+03  5.1195E+01 !
+ ELEMENT SR   FCC_A1                    8.7620E+01  0.0000E+00  0.0000E+00 !
+ ELEMENT TA   BCC_A2                    1.8095E+02  5.6819E+03  4.1472E+01 !
+ ELEMENT TB   HCP_A3                    1.5893E+02  0.0000E+00  0.0000E+00 !
+ ELEMENT TC   HCP_A3                    9.7907E+01  0.0000E+00  0.0000E+00 !
+ ELEMENT TE   HEXAGONAL_A8              1.2760E+02  6.1212E+03  4.9497E+01 !
+ ELEMENT TH   FCC_A1                    2.3204E+02  0.0000E+00  0.0000E+00 !
+ ELEMENT TI   HCP_A3                    4.7880E+01  4.8100E+03  3.0648E+01 !
+ ELEMENT TL   HCP_A3                    2.0438E+02  6.8283E+03  6.4183E+01 !
+ ELEMENT TM   HCP_A3                    1.6893E+02  7.3973E+03  7.4015E+01 !
+ ELEMENT U    ORTHORHOMBIC_A20          2.3803E+02  0.0000E+00  0.0000E+00 !
+ ELEMENT V    BCC_A2                    5.0941E+01  4.5070E+03  3.0890E+01 !
+ ELEMENT W    BCC_A2                    1.8385E+02  4.9700E+03  3.2620E+01 !
+ ELEMENT Y    HCP_A3                    8.8906E+01  0.0000E+00  0.0000E+00 !
+ ELEMENT YB   FCC_A1                    1.7304E+02  0.0000E+00  0.0000E+00 !
+ ELEMENT ZN   HCP_A3                    6.5390E+01  5.6568E+03  4.1631E+01 !
+ ELEMENT ZR   HCP_A3                    9.1224E+01  5.5663E+03  3.9181E+01 !
+
+$ ... 
+
+FUNCTION GHSERAL 298.15 -7976.15+137.093038*T-24.3671976*T*LOG(T)-.001884662*T**2-8.77664E-07*T**3+74092*T**(-1); 700.00 Y
+  -11276.24+228.473331*T-38.5844296*T*LOG(T)+.018531982*T**2-5.764227E-06*T**3+74092*T**(-1); 933.47 Y
+  -11278.378+188.684153*T-31.748192*T*LOG(T)-1.230524E+28*T**(-9); 2900.00 N !
+FUNCTION GFCCAL 298.15 GHSERAL; 2900.00 N !
+FUNCTION GLIQAL 298.15 +11005.029-11.841867*T+7.9337E-20*T**7+GHSERAL; 933.47 Y
+  +10481.974-11.253974*T+1.230524E+28*T**(-9)+GHSERAL; 2900.00 N !
+FUNCTION GHCPAL 298.15 +5481-1.8*T+GHSERAL; 2900.00 N !
+FUNCTION GBCCAL 298.15 +10083-4.813*T+GHSERAL; 2900.00 N !
+
+FUNCTION GHSERMG 298.15 -8367.34+143.675547*T-26.1849782*T*LOG(T)+4.858E-04*T**2-1.393669E-06*T**3+77990*T**(-1); 923.00 Y
+  -14130.185+204.716215*T-34.3088*T*LOG(T)+1.038192E+28*T**(-9); 3000.00 N !
+FUNCTION GHCPMG 298.15 GHSERMG; 3000.00 N !
+FUNCTION GLIQMG 298.15 +8202.243-8.83693*T-8.0522E-21*T**7+GHSERMG; 923.00 Y
+  +8953.293-9.651176*T-1.038192E+28*T**(-9)+GHSERMG; 3000.00 N !
+FUNCTION GFCCMG 298.15 +2600-.9*T+GHSERMG; 3000.00 N !
+FUNCTION GBCCMG 298.15 +3100-.1*T+GHSERMG; 3000.00 N !
+
+FUNCTION GHSERVA 298.15 +0; 10000.00 N !

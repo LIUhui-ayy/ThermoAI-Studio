@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+pycalphad
+matplotlib
+seaborn
+xarray
+scipy
+numpy<2.0
+dask
+distributed
+symengine
+pydantic
+espei
+tinydb
+scikit-learn
+pduq
+optuna
